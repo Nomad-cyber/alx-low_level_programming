@@ -1,0 +1,9 @@
+# -*- MakeFile -*-
+
+CC = gcc  # compiler to be used
+SRC = main.c school.c  # source .c files
+
+all: school
+
+school: $(SRC) m.h
+	$(CC) $(SRC) -o school
